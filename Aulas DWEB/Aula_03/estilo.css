@@ -1,0 +1,42 @@
+body{
+    background-color: blueviolet;                         /* cor de fundo da tag*/
+    width: 100%;                                            /*largura da tag*/
+    padding: 100px;                                         /*padding ajuste de margem */
+    
+        h1{
+            border: 2px solid black ;                     /*borda da tag*/
+            width: 100%;
+            height: 50px;                                   /*altura da tag*/
+            background-color: chartreuse;
+        }
+        h2{
+            border: 2px solid black;
+            width: 100%;
+            height: 50px;
+            background-color: chartreuse;
+        }
+
+        h3{
+            border: 2px solid black;
+            width: 100%;
+            height: 50px;
+            background-color: chartreuse;
+        }
+
+        p{
+            /*border: 2px solid rgb(52, 52, 52);*/
+            width: 90%;
+            height: 282px;
+            background-color: chartreuse;
+            padding-left: 650px;
+        }
+        
+        div{
+            border: 1px solid black;
+            width: 100%;
+            height: 50px;
+            background-color: chartreuse;
+            
+        }
+}
+

@@ -1,0 +1,401 @@
+/* Estilo para a div #menu 
+
+        *Nao conseguir mudar o estilo do botao 
+        *entender o hover e o button
+        *pedir para o professor olhar o cod inserido e ajudar a reorganizar
+        *ve os botoes pro menu e terminar  
+        28/04 domingo
+        */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para modo escuro */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode h1, .dark-mode h3, .dark-mode p, .dark-mode ul, .dark-mode a {
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #444;
+    border-color: #777;
+    color: #ffffff;
+}
+
+.dark-mode button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode  #text_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 191px;                                  
+    background-color:#1e1e1e;
+    margin-bottom: 32px;
+
+}
+.dark-mode #text_coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                     
+    width: 720px;
+    height: 420px;                                  
+    background-color: #1e1e1e;
+    margin-bottom: 32px;
+}
+
+.dark-mode #text_plantation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                     
+    width: 720px;
+    height: 420px;                                  
+    background-color: #1e1e1e;
+    margin-bottom: 32px;
+}
+
+.dark-mode #text_people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 420px;                                  
+    background-color: #1e1e1e;
+    margin-bottom: 32px;
+}
+
+
+.descrition{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+    font-size: 16px;
+    text-align: center;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ .button_effect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    align-items: center;
+}
+
+#menu {
+    display: flex; /* Ativa o layout flexível para exibir elementos lado a lado */
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 800;
+    width: 1440px; /* Define a largura da div como 100% da largura do contêiner pai */
+    height: 100px; /* Permite que a altura seja ajustada automaticamente */
+}
+
+#nav_left{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 100px;
+    align-items: center;
+}
+
+#logo_starbucks{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.ul_menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.li_menu{
+    margin-right: 20px;
+}
+
+a {
+    font-family:Helvetica;
+    color: #1b342e;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c7900;
+    text-decoration: none;
+    font-weight: 800;
+}
+#nav_right{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 700px;
+    height: 100px;
+}
+
+#historia_starbucks{
+    width: 120px;
+    height: 60px;
+    margin-right: 35px;
+}
+
+    /* Estilos para os botões */
+button {
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #1b342e;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #e4e4e4;
+    border-color: #e4e4e4;
+    color: #000000;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: -2px 5px 5px -3px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -2px 5px 5px -3px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -2px 5px 5px -3px rgba(0, 0, 0, 0.42);
+}
+
+#banner_prominence1{
+    width: 1440px;
+    height: 420px;
+    background-color: #ffffff;
+    margin-bottom: 32px;
+}
+
+#image_banner_prominence1{
+    width: 1440px; /* Define a largura da imagem como 100% da largura da div */
+    height: 420px; /* Define a altura da imagem como 100% da altura da div */
+}
+
+#text_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 191px;                                  
+    background-color:#d4e9e2;
+    margin-bottom: 32px;
+}
+
+#coffee{
+    display: flex;
+    flex-direction: row;
+}
+#text_coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                     
+    width: 720px;
+    height: 420px;                                  
+    background-color: #d4e9e2;
+    margin-bottom: 32px;
+}
+
+#banner_coffee{                     
+    width: 720px;
+    height: 420px;                                  
+    background-color: #ffffff;
+    margin-bottom: 32px;
+}
+#plantation{
+    display: flex;
+    flex-direction: row;
+}
+#banner_plantation{                     
+    width: 720px;
+    height: 420px;                                  
+    background-color: #ffffff;
+    margin-bottom: 32px;
+}
+#banner_plantation img {
+    width: 720px; /* Define a largura da imagem como 100% da largura da div */
+    height: 420px; /* Define a altura da imagem como 100% da altura da div */
+}
+#text_plantation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;                   
+    width: 720px;
+    height: 420px;                                  
+    background-color: #d4e9e2;
+    margin-bottom: 32px;
+}
+#people{
+    display: flex;
+    flex-direction: row;
+}
+#text_people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 420px;                                  
+    background-color: #d4e9e2;
+    margin-bottom: 32px;
+}
+#banner_people{
+    width: 720px;
+    height: 420px;                                  
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 32px;
+}
+#banner_people img {
+    width: 720px; /* Define a largura da imagem como 100% da largura da div */
+    height: 420px; /* Define a altura da imagem como 100% da altura da div */
+}
+#footer_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os itens filhos */
+    width: 100%; /* A largura total do contêiner será 100% */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    
+}
+
+.ul_footer_link{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+
+    font-size: 16px;
+}
+
+.li_footer_link{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #6a7275;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #1e3932;
+}
+
+#footer_us{
+    display: flex;
+    flex-direction: column;
+    width: 287px;
+    height: 390px;                                  ;
+}
+#footer_career{
+    width: 286px;
+    height: 390px;                                  
+}
+
+#footer_social{
+    width: 287px;
+    height: 390px;                                  
+}
+#footer_rewards{
+    width: 287px;
+    height: 390px;                                  
+   
+}
+#footer_logo{
+    width: 287px;
+    height: 390px;                                  
+}   
+
+#footer_social_media {
+    width: 1440px; /* Largura do footer */
+    height: 60px; /* Altura do footer */
+    margin-right: 35px; /* Margem à direita do footer */
+    
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.space_icons {
+    margin-right: 10px; /* Adiciona 10 pixels de espaçamento à direita de cada ícone */
+}
+
+#footer_policies {
+    width: 1440px; /* Largura do footer */
+    height: 60px; /* Altura do footer */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+   
+
+.ul_policies {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Remove marcadores de lista */
+}
+
+.li_policies {
+    margin-right: 50px; /* Adiciona 50 pixels de espaçamento à direita de cada item da lista */
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    #menu{
+        display: flex; /* Ativa o layout flexível para exibir elementos lado a lado */
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #ffffff; /* Cor de fundo branca */
+        font-weight: 800;
+        width: 720px; /* Define a largura da div como 100% da largura do contêiner pai */
+        height: 100px; /* Permite que a altura seja ajustada automaticamente */
+        }
+
+    #banner_prominence1{
+        width: 720px;
+        height: 200px;
+        background-color: #ffffff;
+        margin-bottom: 32px;
+     }
+
+    #image_banner_prominence1{
+        width: 720px; /* Define a largura da imagem como 100% da largura da div */
+        height: 200px; /* Define a altura da imagem como 100% da altura da div */
+        }
+
+    #text_information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 720px;
+        height: 90px;                                  
+        background-color:#d4e9e2;
+        margin-bottom: 32px;
+        }
+    }
+}
