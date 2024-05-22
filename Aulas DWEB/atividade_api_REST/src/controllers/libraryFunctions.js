@@ -11,6 +11,10 @@ function listBook(req, res) {
     return book.id === Number(id);
   })
 
+  if (isNaN(id)) {
+    return res.status(400).json({ message: 'Please enter a valid number' });
+  }
+
   if (!result) {
     return res.status(404).json({ message: 'book not found' });
   }
@@ -19,7 +23,11 @@ function listBook(req, res) {
 
 function registerBook(req, res) {
   //console.log(req.body);
-  const { title, author, year} = req.body
+  const { id, title, author, year, pages } = req.body
+
+  if (!id) {
+    return res.status(400).json({ message: "The id field is required." })
+  }
 
   if (!title) {
     return res.status(400).json({ message: "The title field is required." })
@@ -33,10 +41,16 @@ function registerBook(req, res) {
     return res.status(400).json({ message: "The year field is required." })
   }
 
-  const instructor = {
+  if (!pages) {
+    return res.status(400).json({ message: "The pages field is required." })
+  }
+
+  const book = {
+    id: id,
     title: title,
     author: author,
-    year: year
+    year: year,
+    pages: pages
   }
 
   books.push(book);
@@ -77,10 +91,10 @@ function updateBook(req, res) {
   result.year = year;
   result.pages = pages;
 
-  return res.status(204).send (result);
+  return res.status(204).send(result);
 }
 
-function deleteBook (req, res) {
+function deleteBook(req, res) {
   const { id } = req.params;
 
   const result = books.find((book) => {
@@ -95,7 +109,7 @@ function deleteBook (req, res) {
     return book.id !== Number(id);
   })
 
-  return res.status(200).json({message: 'successfully deleted book'})
+  return res.status(200).json({ message: 'successfully deleted book' })
 }
 
 
