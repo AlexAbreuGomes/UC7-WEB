@@ -1,3 +1,4 @@
+
 let { instructors } = require("../database");
 
 function listInstructors(req, res) {

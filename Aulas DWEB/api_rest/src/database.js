@@ -22,4 +22,4 @@ const dataBase = {
     ]
 }
 
-module.exports = dataBase;
+module.exports = database;
